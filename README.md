@@ -72,7 +72,7 @@
 
 
   [![Twitter](https://skillicons.dev/icons?i=twitter)](https://twitter.com/mohit_dudhat22)
-[![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/mohit-dudhat/)
+[![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/mohit-dudhatx/)
 <!-- part 5 -->
 ---
 
