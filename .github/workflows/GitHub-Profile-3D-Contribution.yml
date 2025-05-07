@@ -21,10 +21,18 @@ jobs:
           USERNAME: SmitSatasiya
           MAX_REPOS: 100
 
-      - name: Commit & Push the generated files
+      - name: Configure Git
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
+
+      - name: Show current Git user
+        run: |
+          git config --get user.name
+          git config --get user.email
+
+      - name: Commit & Push the generated files
+        run: |
           git add -A .
           git commit -m "generated" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.PAT }}@github.com/SmitSatasiya/SmitSatasiya.git HEAD:main
