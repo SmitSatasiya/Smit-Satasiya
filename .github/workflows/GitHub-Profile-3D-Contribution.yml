@@ -1,36 +1,28 @@
-name: GitHub-Profile-3D-Contribution
+name: GitHub-Profile-3D-Contrib
 
 on:
-  # Runs daily at 6:00 PM UTC
   schedule:
-    - cron: "0 18 * * *"
+    - cron: "0 0 * * *"  # runs daily
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contribution
+
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Generate 3D Contribution Graph
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}        # Your PAT secret, must have 'repo' scope
+          GITHUB_TOKEN: ${{ secrets.PAT }}
           USERNAME: SmitSatasiya
-          MAX_REPOS: 100
-
-      - name: Set up Git with PAT
-        run: |
-          git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/SmitSatasiya/SmitSatasiya.git
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git config --get user.name
-          git config --get user.email
 
       - name: Commit & Push the generated files
         run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
           git add -A .
           git commit -m "generated" || echo "No changes to commit"
-          git push origin HEAD:main
+          git push https://x-access-token:${{ secrets.PAT }}@github.com/SmitSatasiya/SmitSatasiya.git HEAD:main
