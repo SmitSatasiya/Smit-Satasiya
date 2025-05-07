@@ -64,15 +64,15 @@
 # Leetcode Stats
 
 <div align="center">
-	<img src="https://leetcard.jacoblin.cool/mohitdudhat22?theme=dark&font=Noticia%20Text&ext=contest" alt="LeetCode Stats">
+	<img src="https://leetcard.jacoblin.cool/smit-satasiya?theme=dark&font=Noticia%20Text&ext=contest" alt="LeetCode Stats">
 </div>
 
 <!-- part 5 -->
 # Contact Me :
 
 
-  [![Twitter](https://skillicons.dev/icons?i=twitter)](https://twitter.com/mohit_dudhat22)
-[![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/mohit-dudhatx/)
+  <!--[![Twitter](https://skillicons.dev/icons?i=twitter)](https://twitter.com/smit-satasiya)-->
+[![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/smit-satasiya)
 <!-- part 5 -->
 ---
 
